@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  font-size: calc(5px + 2vmin);
+  background-color:  black;
+  color: whitesmoke;
+
+}

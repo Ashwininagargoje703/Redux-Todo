@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { addTodo, deleteTodo } from '../actions';
+import { addTodo, deleteTodo,  } from '../actions';
 import { useDispatch, useSelector } from "react-redux";
 export const Todo = () => {
   const dispatch= useDispatch();
@@ -8,7 +8,7 @@ export const Todo = () => {
   return (
     <div className='mt-5'>
         <input type="text" className='w-3' value={inputData} onChange={(e)=>{
-     setInputData(e.target.value)
+          setInputData(e.target.value)
         }}/>
         <button className='btn btn-primary ' onClick={()=>{
           dispatch(addTodo(inputData)),setInputData("")
